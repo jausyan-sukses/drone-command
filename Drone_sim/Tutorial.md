@@ -27,6 +27,15 @@ or
 ```sh
 ros2 run mavros mavros_node --ros-args -p fcu_url:=udp://127.0.0.1:14550@14550
 ```
+real drone
+```sh
+ros2 run mavros mavros_node --ros-args -p fcu_url:=serial:///dev/ttyACM0:57600
+```
+or
+```sh
+ros2 run mavros mavros_node --ros-args -p fcu_url:=serial:///dev/ttyUSB0:115200
+```
+
 ![mavros](s2.png)
 
 ## check ros2 topic connection
@@ -56,6 +65,11 @@ takeoff
 ```sh
 ros2 service call /mavros/cmd/takeoff mavros_msgs/srv/CommandTOL "{altitude: 10}"
 ```
+Landing
+```sh
+ros2 service call /mavros/cmd/land mavros_msgs/srv/CommandTOL "{min_pitch: 0.0, yaw: 0.0, latitude: 0.0, longitude: 0.0, altitude: 0.0}"
+```
+
 move to
 ```sh
 ros2 topic pub /mavros/setpoint_position/local geometry_msgs/msg/PoseStamped "{
