@@ -1,4 +1,14 @@
 # Drone Simulation using Gazebo11
+by el-jausyan
+
+first think first before you do drone simulation in gazebo you need to donwload all dependencies need in ubuntu, first things fisrt you need to download this
+1. ROS 2 Foxy
+2. Mavros
+3. Ardupilot
+4. Ardupilot_gazebo
+5. Mavlink / stlink
+6. geographicslib
+7. gazebo classic
 <mark>How to simulate your drone in Gazebo classic</mark> <br>
 Go to the terminal (Ctrl + Alt + T)
 
