@@ -9,6 +9,7 @@ first think first before you do drone simulation in gazebo you need to donwload 
 5. Mavlink / stlink
 6. geographicslib
 7. gazebo classic
+   
 <mark>How to simulate your drone in Gazebo classic</mark> <br>
 Go to the terminal (Ctrl + Alt + T)
 
