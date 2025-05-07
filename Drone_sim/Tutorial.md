@@ -89,7 +89,7 @@ ros2 topic pub /mavros/setpoint_position/local geometry_msgs/msg/PoseStamped "{
         frame_id: 'map'
     },
     pose: {
-        position: {x: 10.0, y: 10.0, z: 5.0},
+        position: {x: 1.0, y: 1.0, z: 1.0},
         orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}
     }
 }" --once
