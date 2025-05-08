@@ -9,7 +9,7 @@ first think first before you do drone simulation in gazebo you need to donwload 
 5. Mavlink / stlink
 6. geographicslib
 7. gazebo classic
-   
+
 <mark>How to simulate your drone in Gazebo classic</mark> <br>
 Go to the terminal (Ctrl + Alt + T)
 
@@ -94,3 +94,29 @@ ros2 topic pub /mavros/setpoint_position/local geometry_msgs/msg/PoseStamped "{
     }
 }" --once
 ```
+# How to build worksapce ROS-2 Foxy
+This im gonna show you how to build Ros2 workspcae to build script and drone task
+## 1 Building Folder
+```sh
+mkdir -p ~/ros2_ws/src
+cd ~/ros2_ws
+colcon build
+source install/setup.bash
+```
+## 2 Make package
+based own your package script usage
+```sh
+cd ~/ros2_ws/src
+ros2 pkg create --build-type ament_cmake drone_teleop --dependencies rclcpp geometry_msgs mavros_msgs std_msgs
+```
+go to folder
+```sh
+cd drone_teleop
+```
+## 3 Make the script
+```sh
+mkdir src
+cd src
+touch teleop_keyboard.cpp
+```
+   
