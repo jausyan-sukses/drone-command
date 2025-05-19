@@ -27,7 +27,6 @@ gazebo --verbose ~/ardupilot_gazebo/worlds/iris_arducopter_runway.world
 ```
 Dont forget to check Connection status at console
 ![drone](s1.png)
-Add the repository to your sources list.
 
 ## Terminal 3
 run MAVROS Console
