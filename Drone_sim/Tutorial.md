@@ -17,7 +17,7 @@ Go to the terminal (Ctrl + Alt + T)
 Run MAVProxy
 ```sh
 cd ardupilot/ArduCopter
-sim_vehicle.py -v ArduCopter -f gazebo-iris --console
+sim_vehicle.py -v ArduCopter -f gazebo-iris --console --map
 ```
 
 ## Terminal 2
